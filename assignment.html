@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals &Loops</title>
+</head>
+<body>
+    <script>
+        function multiples(){
+        
+            for(i=1;i<=100;i++){ 
+            if(i%3==0 && i%5==0){
+                console.log("Fizzbuzz")
+            }
+            else if(i%3==0){
+                console.log("Fizz")
+            }
+            else if(i%5==0){
+                console.log("Buzz")
+            }
+            else {
+                console.log(i)
+            }
+        }
+        }
+multiples()
+
+        function sum(){
+            let sum=0
+            for(x=1;x<1000;x++){
+             if (x%3==0 || x%5==0){
+                 sum+=x
+                 console.log(sum)
+             }
+           
+
+            }
+        }
+sum()
+
+        function even_odd(){
+            for(y=0;y<=20;y++){
+                if(y%2==0){
+                    console.log(`${y} is even`)
+                }
+                else {
+                    console.log(`${y} is odd`)
+                }
+            }
+        }
+even_odd()  
+
+        function largest_number(){
+            let num=[-2,4,-5,6,0]
+            Math.max(num)
+            console.log(num)
+        }
+largest_number()   
+
+
+        function max_number(){
+            a=10
+            b=40
+            if(a>b){
+                console.log(a)
+            }
+            else{
+                console.log(b)
+            }
+        }
+max_number()  
+
+        function leap_year(){
+            for(year=2000;year<2022;year++){
+                if(year%4==0){
+                    console.log(`${year} is a leap year`)  
+                }
+            }
+        }
+
+leap_year()        
+    </script>
+</body>
+</html>
