@@ -30,7 +30,7 @@ multiples()
         function sum(){
             let sum=0
             for(x=1;x<1000;x++){
-             if (x%3==0 || x%5==0){
+             if (x%3==0 && x%5==0){
                  sum+=x
                  console.log(sum)
              }
@@ -53,10 +53,17 @@ sum()
 even_odd()  
 
         function largest_number(){
-             let num=[-2,4,-5,6,0]
-             max=Math.max.apply(null,num)
-             console.log(max)
+          let num = [-2,4,-5,6,0];
+            largest=0
+            for(let i=0; i<num.length;i++){
+                if(num[i]>largest){
+                    largest=num[i];
+                }
+            }
+            console.log(largest)
         }
+       
+
 largest_number()   
 
 
